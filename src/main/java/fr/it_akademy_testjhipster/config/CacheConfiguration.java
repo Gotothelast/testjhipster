@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, fr.it_akademy_testjhipster.domain.User.class.getName());
             createCache(cm, fr.it_akademy_testjhipster.domain.Authority.class.getName());
             createCache(cm, fr.it_akademy_testjhipster.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.it_akademy_testjhipster.domain.Region.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Country.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Location.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Department.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Department.class.getName() + ".employees");
+            createCache(cm, fr.it_akademy_testjhipster.domain.Task.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Task.class.getName() + ".jobs");
+            createCache(cm, fr.it_akademy_testjhipster.domain.Employee.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, fr.it_akademy_testjhipster.domain.Job.class.getName());
+            createCache(cm, fr.it_akademy_testjhipster.domain.Job.class.getName() + ".tasks");
+            createCache(cm, fr.it_akademy_testjhipster.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
